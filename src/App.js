@@ -1,25 +1,16 @@
-import './App.css';
-import Start from './components/Start';
-import Timer from './components/Timer';
-import Trivia from './components/Trivia';
+import React from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { Start } from './components/Start';
+import { Timer } from './components/Timer';
+import { Trivia } from './components/Trivia';
+import './styles/App.css';
 
 function App() {
   return (
     <div className="app">
       <Start />
-      <>
-        <div className="main">
-          <h1 className="endText">You earned:</h1>
-          <div className="top">
-            <div className="timer">
-              <Timer />
-            </div>
-          </div>
-          <div className="bottom">
-            <Trivia />
-          </div>
-        </div>
-      </>
+      <Timer />
+      <Trivia />
       <div className="pyramid">
         <ul className="moneyList">
           <li className={'moneyListItem active'}>

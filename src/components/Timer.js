@@ -1,1 +1,2 @@
-export default function Timer({ setTimeOut, questionNumber }) {}
+import React from 'react';
+export const Timer = () => {};
